@@ -1,7 +1,9 @@
 # bevy_swarm
 Swarm stands for Static Utility AI Reasoner Macro(if you replace the U with W :D).
-Like the name says, this crate ships a macro to create action-components that hold the score for themselves (and bundles for them), and reasoner systems to decide what action was best scored. 
-The name has static in it because it relies on Rust's type system and bevy's static queries, this means you need to define all actions at compile time.
+Like the name says, this crate ships a macro to create reasoner systems. Reasoner systems are the systems that decide what action was best scored the last run. They are pretty boiler-platey, so to reduce that, this crate was created.
+To understand what the macro does, read the "How to use" section :D.
+
+The name has static in it because it relies on Rust's type system and bevy's static queries, this means you need to define all actions at before compilation.
 
 ## How to use
 Well, the main feature of this crate is the reasoner macro, so let's use it and see what it does: 
