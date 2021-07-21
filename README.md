@@ -6,8 +6,7 @@ To understand what the macro does, read the "How to use" section :D.
 The name has static in it because it relies on Rust's type system and bevy's static queries, this means you need to define all actions at before compilation.
 
 ## How to use
-Well, the main feature of this crate is the reasoner macro, so let's use it and see what it does: 
-For the following macro call, for example:
+Well, the main feature of this crate is the reasoner macro, so let's use it and see what it does, for the following macro call, for example:
 ```rs
 create_reasoner! {
     Dwarf{
