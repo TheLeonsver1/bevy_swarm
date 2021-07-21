@@ -75,6 +75,7 @@ Scoring systems are thus also regular bevy systems that could be ran in parralel
 This crate only ships the reasoner macro, it doesn't have any opinion on how to score actions or what do to with them after the reasoner has chosen an action!
 You should perhaps use a tweening library, easer was quite nice :D.
 
+You are not limited to one action group too, you can compose your ai from groups of actions, they are easily composeable since they are just bundles and systems i the end of day. Just call the macro more than once :D.
 ## License
 
 bevy_swarm is primarily distributed under the terms of either the MIT license or the Apache License (Version 2.0).
