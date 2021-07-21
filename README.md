@@ -39,7 +39,7 @@ pub struct DwarfActionsBundle{
     pub sleep:Sleep,
     pub dwarf_actions:DwarfActions
 }
-/// This is the reasoner systems that chooses our next action
+/// This is the reasoner system that chooses our next action
 fn determine_next_action_dwarf_actions(
     mut query: Query<(
         &Eat,
