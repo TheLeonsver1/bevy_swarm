@@ -4,9 +4,8 @@ Like the name says, this crate ships a macro to create action-components that ho
 The name has static in it because it relies on Rust's type system and bevy's static queries, this means you need to define all actions at compile time.
 
 ## How to use
-Action components are regular bevy components which are wrappers on an f32 value!
-
-For Example, for the following macro call:
+Well, the main feature of this crate is the reasoner macro, so let's use it and see what it does: 
+For the following macro call, for example:
 ```rs
 create_reasoner! {
     Dwarf{
