@@ -3,7 +3,7 @@ Swarm stands for Static Utility AI Reasoner Macro(if you replace the U with W :D
 Like the name says, this crate ships a macro to create reasoner systems. Reasoner systems are the systems that decide what action was best scored the last run. They are pretty boiler-platey, so to reduce that, this crate was created.
 To understand what the macro does, read the "How to use" section :D.
 
-The name has static in it because it relies on Rust's type system and bevy's static queries, this means you need to define all actions at before compilation.
+The name has static in it because it relies on Rust's type system and bevy's static queries, this means you need to define all actions before compilation.
 
 ## How to use
 Well, the main feature of this crate is the reasoner macro, so let's use it and see what it does, for the following macro call, for example:
@@ -25,7 +25,7 @@ pub enum DwarfActions {
     Sleep
 }
 // These are Action components, they're newtypes wrapping an f32
-// Your scoring systems would need to mutate their value to affect the chosen DwarfActions // // variant
+// Your scoring systems would need to mutate their value to affect the chosen DwarfActions variant
 #[derive(Debug,Default)]
 pub struct Eat(f32);
 #[derive(Debug,Default)]
